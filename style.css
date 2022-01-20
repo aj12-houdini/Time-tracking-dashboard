@@ -1,0 +1,215 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Slab:wght@300&family=Rubik&family=Sacramento&display=swap");
+
+body {
+  height: 100vh;
+  margin: 0;
+  background-color: hsl(226, 43%, 10%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  /* width: 100vw; */
+  font-family: "Rubik", sans-serif;
+}
+
+.entire {
+  display: flex;
+}
+
+.report {
+  border-radius: 10px;
+  background-color: hsl(235, 46%, 20%);
+  position: relative;
+  padding: 80px 40px;
+  min-height: 450px;
+  min-width: 250px;
+  margin-right: 20px;
+  margin-left: 10px;
+}
+.report-for {
+  border-radius: 12px;
+  background-color: hsl(246, 80%, 60%);
+  margin-top: 0;
+  height: 70%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+.report-for h3 {
+  padding: 0 30px;
+  font-weight: normal;
+  opacity: 0.5;
+}
+
+.report-for h1 {
+  padding: 0 30px;
+  width: 30%;
+  font-size: 40px;
+  font-weight: normal;
+}
+
+.report-for img {
+  padding: 30px;
+}
+
+.report-time {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.report-time ul {
+  list-style: none;
+  padding: 5px 20px;
+}
+
+.report-time ul li {
+  margin: 20px 0;
+}
+
+.btn {
+  font-size: 18px;
+  background-color: hsl(235, 46%, 20%);
+  border: 0;
+  color: rgba(255, 255, 255, 0.63);
+  font-family: inherit;
+  cursor: pointer;
+  transition: color 0.4s linear;
+}
+
+.btn.active {
+  color: white;
+}
+
+.btn:hover {
+  color: white;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  column-gap: 0;
+  row-gap: 50px;
+  margin: 20px 0;
+  color: white;
+  white-space: wrap;
+  padding: 0;
+}
+
+.time {
+  position: absolute;
+  left: 0;
+  background-color: hsl(235, 46%, 20%);
+  bottom: 0;
+  padding: 0px 30px;
+  padding-bottom: 30px;
+  width: 80%;
+  border-radius: 8px;
+  height: 65%;
+}
+
+.box {
+  height: 230px;
+  background-color: blue;
+  margin: 0 30px;
+  padding: 0 50px;
+  border-radius: 10px;
+  position: relative;
+  min-width: 200px;
+}
+
+.time h3 {
+  font-weight: normal;
+  padding: 0;
+}
+
+.container .para-time {
+  font-size: 50px;
+  margin: 0;
+  font-weight: normal;
+}
+
+.time .ellipsis {
+  position: absolute;
+  right: 10px;
+  padding: 20px;
+}
+
+.activity-img {
+  position: absolute;
+  right: 0;
+  padding-right: 20px;
+}
+
+.box.work {
+  background-color: hsl(15, 100%, 70%);
+}
+
+.box.play {
+  background-color: hsl(195, 74%, 62%);
+}
+
+.box.study {
+  background-color: hsl(348, 100%, 68%);
+}
+
+.box.exercise {
+  background-color: hsl(145, 58%, 55%);
+}
+
+.box.social {
+  background-color: hsl(264, 64%, 52%);
+}
+
+.box.self-care {
+  background-color: hsl(43, 84%, 65%);
+}
+
+@media only screen and (max-width: 700px) {
+  body {
+    text-align: center;
+  }
+  .container {
+    display: grid;
+    grid-template-columns: auto;
+  }
+  .entire {
+    display: grid;
+    grid-template-columns: auto;
+    text-align: center;
+  }
+  .report {
+    padding: 0;
+    /* text-align: center; */
+  }
+
+  .report-for {
+    height: 70%;
+    padding: 0;
+    /* text-align: center; */
+  }
+
+  .report-for h1 {
+    font-size: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    white-space: nowrap;
+    transform: translateX(-20%);
+  }
+
+  .report-time {
+    text-align: center;
+  }
+
+  .report-time ul {
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+  }
+  .report-time ul li .btn {
+    margin: 0 15px;
+    font-size: 20px;
+  }
+}
